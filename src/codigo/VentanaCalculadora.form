@@ -44,16 +44,16 @@
                               <Component id="seis" min="-2" pref="60" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" groupAlignment="1" attributes="0">
                                   <Component id="uno" min="-2" pref="60" max="-2" attributes="0"/>
-                                  <Component id="reset" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                                  <Component id="punto" min="-2" pref="60" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Group type="102" attributes="0">
                                       <Component id="cero" min="-2" pref="60" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="igual" min="-2" pref="60" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="suma" min="-2" pref="60" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" attributes="0">
                                       <Component id="dos" min="-2" pref="60" max="-2" attributes="0"/>
@@ -65,19 +65,21 @@
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="suma" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
-                          <Component id="producto" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
-                          <Component id="punto" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
-                          <Component id="resto" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="producto" min="-2" pref="60" max="-2" attributes="0"/>
+                              <EmptySpace pref="18" max="32767" attributes="0"/>
+                              <Component id="reset" min="-2" pref="60" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="resto" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                                  <Component id="resta" min="-2" pref="60" max="-2" attributes="0"/>
+                                  <Component id="division" min="-2" pref="60" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="igual" min="-2" pref="60" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="resta" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
-                          <Component id="division" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
-                          <Component id="decenas" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
-                          <Component id="raiz" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -96,12 +98,15 @@
                           <Component id="siete" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
                           <Component id="ocho" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
                           <Component id="nueve" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
+                          <Component id="reset" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
+                          <Component id="producto" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="cuatro" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
                           <Component id="cinco" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
                           <Component id="seis" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
+                          <Component id="division" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -112,28 +117,16 @@
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="cero" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
-                          <Component id="igual" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
-                          <Component id="reset" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
+                          <Component id="punto" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
+                          <Component id="suma" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
+                          <Component id="resta" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" attributes="0">
-                      <Component id="suma" min="-2" pref="60" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="producto" min="-2" pref="60" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="144" max="-2" attributes="0"/>
                       <Component id="resto" min="-2" pref="60" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="punto" min="-2" pref="60" max="-2" attributes="0"/>
                   </Group>
-                  <Group type="102" attributes="0">
-                      <Component id="resta" min="-2" pref="60" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="division" min="-2" pref="60" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="raiz" min="-2" pref="60" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="decenas" min="-2" pref="60" max="-2" attributes="0"/>
-                  </Group>
+                  <Component id="igual" alignment="1" min="-2" pref="204" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
@@ -445,24 +438,6 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="restoActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="decenas">
-      <Properties>
-        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="13" green="c3" red="c9" type="rgb"/>
-        </Property>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Ubuntu" size="16" style="0"/>
-        </Property>
-        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="1" green="1" red="1" type="rgb"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="*10&#xaa;"/>
-        <Property name="opaque" type="boolean" value="true"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="decenasActionPerformed"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JButton" name="resta">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -497,24 +472,6 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="divisionActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="raiz">
-      <Properties>
-        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="17" green="60" red="cb" type="rgb"/>
-        </Property>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Ubuntu" size="24" style="0"/>
-        </Property>
-        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="1" green="1" red="1" type="rgb"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="&#x221a;"/>
-        <Property name="opaque" type="boolean" value="true"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="raizActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
