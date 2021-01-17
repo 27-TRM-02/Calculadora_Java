@@ -14,7 +14,7 @@ package codigo;
 public class VentanaCalculadora extends javax.swing.JFrame {
     // VARIABLES DE INSTANCIA
     double operando1 = 0;
-    String operacion = "0";
+    String operacion = "";
 
     /**
      * Creates new form VentanaCalculadora
@@ -194,12 +194,22 @@ public class VentanaCalculadora extends javax.swing.JFrame {
         reset.setForeground(new java.awt.Color(1, 1, 1));
         reset.setText("AC");
         reset.setOpaque(true);
+        reset.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                resetActionPerformed(evt);
+            }
+        });
 
         igual.setBackground(new java.awt.Color(38, 206, 6));
         igual.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         igual.setForeground(new java.awt.Color(1, 1, 1));
         igual.setText("=");
         igual.setOpaque(true);
+        igual.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                igualActionPerformed(evt);
+            }
+        });
 
         punto.setBackground(new java.awt.Color(201, 195, 19));
         punto.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
@@ -228,12 +238,22 @@ public class VentanaCalculadora extends javax.swing.JFrame {
         producto.setForeground(new java.awt.Color(1, 1, 1));
         producto.setText("*");
         producto.setOpaque(true);
+        producto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                productoActionPerformed(evt);
+            }
+        });
 
         resto.setBackground(new java.awt.Color(203, 96, 23));
         resto.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         resto.setForeground(new java.awt.Color(1, 1, 1));
         resto.setText("%");
         resto.setOpaque(true);
+        resto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                restoActionPerformed(evt);
+            }
+        });
 
         decenas.setBackground(new java.awt.Color(201, 195, 19));
         decenas.setFont(new java.awt.Font("Ubuntu", 0, 16)); // NOI18N
@@ -262,12 +282,22 @@ public class VentanaCalculadora extends javax.swing.JFrame {
         division.setForeground(new java.awt.Color(1, 1, 1));
         division.setText("/");
         division.setOpaque(true);
+        division.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                divisionActionPerformed(evt);
+            }
+        });
 
         raiz.setBackground(new java.awt.Color(203, 96, 23));
         raiz.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         raiz.setForeground(new java.awt.Color(1, 1, 1));
         raiz.setText("√");
         raiz.setOpaque(true);
+        raiz.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                raizActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -418,12 +448,57 @@ public class VentanaCalculadora extends javax.swing.JFrame {
     }//GEN-LAST:event_puntoActionPerformed
 
     private void decenasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_decenasActionPerformed
-        botonPulsado("*10ª");
+        
     }//GEN-LAST:event_decenasActionPerformed
 
     private void sumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sumaActionPerformed
         operacionPulsada("+");
     }//GEN-LAST:event_sumaActionPerformed
+
+    private void productoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_productoActionPerformed
+        operacionPulsada("*");
+    }//GEN-LAST:event_productoActionPerformed
+
+    private void divisionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_divisionActionPerformed
+        operacionPulsada("/");
+    }//GEN-LAST:event_divisionActionPerformed
+
+    private void restoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_restoActionPerformed
+        operacionPulsada("%");
+    }//GEN-LAST:event_restoActionPerformed
+
+    private void raizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_raizActionPerformed
+        operacionPulsada("√");
+    }//GEN-LAST:event_raizActionPerformed
+
+    private void igualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_igualActionPerformed
+        double operando2 = Double.valueOf(display.getText());
+        if (operacion.equals("+")){
+            operando1 = operando1 + operando2;
+        }
+        if (operacion.equals("-")){
+            operando1 = operando1 - operando2;
+        }
+        if (operacion.equals("*")){
+            operando1 = operando1 * operando2;
+        }
+        if (operacion.equals("/")){
+            if (operando2 != 0){
+                operando1 = operando1 / operando2;
+            } else {
+                display.setText("No me dejan divir entre 0");
+            }
+        }
+        if (operacion.equals("%")){
+            operando1 = operando1 % operando2;
+        }
+        display.setText(String.valueOf(operando1));
+    }//GEN-LAST:event_igualActionPerformed
+
+    private void resetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resetActionPerformed
+        display.setText("0");
+        operando1 = 0;
+    }//GEN-LAST:event_resetActionPerformed
 
     /**
      * @param args the command line arguments

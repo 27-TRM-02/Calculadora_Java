@@ -351,6 +351,9 @@
         <Property name="text" type="java.lang.String" value="AC"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="resetActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="igual">
       <Properties>
@@ -366,6 +369,9 @@
         <Property name="text" type="java.lang.String" value="="/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="igualActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="punto">
       <Properties>
@@ -417,6 +423,9 @@
         <Property name="text" type="java.lang.String" value="*"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="productoActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="resto">
       <Properties>
@@ -432,6 +441,9 @@
         <Property name="text" type="java.lang.String" value="%"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="restoActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="decenas">
       <Properties>
@@ -483,6 +495,9 @@
         <Property name="text" type="java.lang.String" value="/"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="divisionActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="raiz">
       <Properties>
@@ -498,6 +513,9 @@
         <Property name="text" type="java.lang.String" value="&#x221a;"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="raizActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
